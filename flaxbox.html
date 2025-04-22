@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+
+<title> flexbox layout </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style type="text/css">
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:arial;
+    display: flex;
+    flex-direction: column;
+    margin:0;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background:#566c2b;
+    display:flex;
+    align-items: center;
+    padding:15px 0;
+}
+header ul{
+    list-style:none;
+    display:flex;
+    padding:0;
+    margin:0;
+}
+header a{
+    color:#fff;
+}
+#logo{
+    margin:0 auto;
+    font-size:30px;
+}
+#menu li{
+    padding:10px;
+}
+#social-links li{
+    padding:10px;
+}
+#main{
+    display:flex;
+}
+article{
+    padding:10px;
+}
+aside{
+    flex: 0 0 20vw;
+    background:#FFFFcc;
+    padding:10px;
+}
+aside ul{
+    list-style:none;
+    padding:0;
+}
+aside ul a{
+    color:#566c2b;
+    padding:10px;
+    display:block;
+    border-bottom: 1px solid grey;
+}
+aside img{
+    width:100%;
+}
+.services-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.service-box{
+    border: 1px solid #eee;
+    flex-basis:32%;
+    max-width:370px;
+    padding:10px;
+    margin-bottom:15px;
+    display:flex;
+    flex-direction:column;
+}
+.service-box img{
+    width:100%;
+}
+.service-box h3{
+    margin: 5px 0 10px;
+}
+.service-box p{
+    margin: 0 0 10px;
+}
+.call-to-action{
+    align-self:flex-start;
+    margin-top:auto;
+}
+.call-to-action a{
+background:grey;
+border: 2px solid transparent;
+color:#fff;
+padding:8px 13px;
+display:block;
+}
+.call-to-action a:hover{
+    color:grey;
+    background:transparent;
+    border: 2px solid grey;
+}
+footer{
+    background:#566c2b;
+    color:#fff;
+    text-align:center;
+    padding: 15px 0;
+}
+@media screen and (max-width:850px){
+    .service-box{
+        flex-basis:48%;
+    }
+    aside{
+        flex: 0 0 30vw;
+    }
+}
+@media screen and (max-width:600px){
+header{
+    flex-direction:column;
+}
+#logo{
+    order:-1;
+}
+#main{
+    flex-direction:column;                                                                                                                                                                           
+}
+article{
+    order:-1;
+}
+.services-container{
+    flex-direction:column;
+    align-items:center;
+}
+h2{
+    text-align:center;
+}
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+
+<body>
+<header>
+  <nav id="menu">
+    <ul>
+
+      <li> <a href=""> Home </a> </li>
+
+      <li> <a href=""> About Us </a> </li>
+
+      <li> <a href=""> contact </a> </li>
+
+    </ul>
+  </nav>
+
+  <div id="logo"> 
+    <a href=""> website </a>
+  </div>
+
+  <nav id="social-links"> 
+
+    <ul>
+
+      <li> <a href=""><i class="fa-brands fa-facebook-f"></i></a> </li>
+
+      <li> <a href=""><i class="fa-brands fa-twitter"></i></a> </li>
+
+      <li> <a href=""><i class="fa-brands fa-google-plus-g"></i></a> </li>
+
+    </ul>
+
+  </nav>
+
+</header>
+
+<div id="main">
+
+<aside class="">
+
+  <ul>
+
+    <li><a href="">some link</a></li>
+
+    <li><a href="">some link</a></li>
+
+    <li><a href="">some link</a></li>
+
+    <li><a href="">some link</a></li>
+
+    <li><a href="">some link</a></li>
+
+  </ul>
+  <img src="img/georgie-cobbs-muOHbrFGEQY-unsplash.jpg" alt="">
+
+</aside>
+
+<article class=""> 
+<h2> Welcome to our Website </h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sunt ab sapiente exercitationem natus architecto eius earum inventore eaque totam. Voluptatum quia porro unde provident officiis omnis est repellendus neque doloremque consequuntur quos, minus eveniet facilis saepe, aspernatur, ad blanditiis! Quia impedit ratione error nulla! Blanditiis fuga itaque ex reprehenderit ipsum possimus, rerum adipisci illo, fugiat animi ratione iure tenetur, sequi assumenda? Ducimus in aliquam doloremque eum sequi architecto, alias laboriosam consectetur? Fugit assumenda tempora cumque vitae eius sint ab saepe ullam excepturi. Autem laboriosam in odit error eligendi voluptate tempora, assumenda commodi earum placeat nisi consequatur mollitia? Aut, asperiores!</p>
+
+<h2> Our Services </h2>
+<div class="services-container">
+  <div class="service-box">
+    <div class="service-img">
+      <img src="img/clement-helardot-95YRwf6CNw8-unsplash.jpg" alt="">
+     </div>
+   <div class="service-title">
+     <h3> Web Designing </h3>
+   </div>
+   <div class="service-desc">
+     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsa cum quibusdam nobis modi nam rerum corporis incidunt, expedita necessitatibus. </p>
+   </div>
+   <div class="call-to-action">
+     <a href=""> read mode </a>
+   </div>
+  </div>
+
+  <div class="service-box">
+    <div class="service-img">
+      <img src="img/scott-graham-5fNmWej4tAA-unsplash.jpg" alt="">
+     </div>
+   <div class="service-title">
+     <h3> Web Development </h3>
+   </div>
+   <div class="service-desc">
+     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ipsa! </p>
+   </div>
+   <div class="call-to-action">
+     <a href=""> read mode </a>
+   </div>
+  </div>
+
+  <div class="service-box">
+    <div class="service-img">
+      <img src="img/domenico-loia-hGV2TfOh0ns-unsplash.jpg" alt="">
+     </div>
+   <div class="service-title">
+     <h3> Mobile App Development </h3>
+   </div>
+   <div class="service-desc">
+     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ipsa! </p>
+   </div>
+   <div class="call-to-action">
+     <a href=""> read mode </a>
+   </div> 
+</footer>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>

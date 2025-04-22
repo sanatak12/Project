@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sticky Navbar</title>
+        
+        <style>
+            body{
+                margin: 0;
+            }
+            .top-con{
+                background-image: url("https://images.unsplash.com/photo-1547394765-185e1e68f34e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+                height:100vh;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .top-con h1{
+                color: white;
+                font-size: 50px;
+                font-family: Impact;
+                letter-spacing: 2px;
+            }
+            .text{
+                margin: 50px 5%;
+                font-family: sans-serif;
+            }
+            .navbar{
+                display: flex;
+                position: fixed;
+                background-color: white;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                transition: background-color 0.4s;
+            }
+            .navbar ul{
+                display: flex;
+                list-style-type: none;
+            }
+            .navbar ul li a{
+                text-decoration: none;
+                margin: 0 10px;
+                color: black;
+                font-family: cursive;
+            }
+            .navbar ul li a:hover{
+                color: purple; 
+            }
+            .navbar.active{
+                background-color: black;
+            }
+            .navbar.active ul li a{
+                color: white;
+            }
+           
+        </style>
+
+    </head>
+    <body>
+        <div class="navbar">
+          <a href="/navbar.html"><img src="/img/download (1).svg"></a>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="top-con">
+            <h1>Welcome to our website</h1>
+        </div>
+        <div class="bottom-con">
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus fuga animi, minus consequuntur dolorem accusantium placeat possimus sapiente sequi voluptatibus officia quae nam, eius, labore doloremque cupiditate explicabo earum totam magni illo quia! Possimus ab facilis fugit earum, nemo provident quasi cum tempora sit quaerat. Laboriosam velit excepturi corporis eveniet veritatis nostrum dolor id nihil sit beatae quo perspiciatis est vitae quasi quod eaque laborum, officia suscipit porro? Dicta, pariatur vel expedita beatae nihil, accusantium voluptatum et impedit dolores quibusdam eos similique maiores aperiam ad, repellendus minima dolore aspernatur culpa odio quos corporis. Est dolor deserunt provident soluta a!</p>
+
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus fuga animi, minus consequuntur dolorem accusantium placeat possimus sapiente sequi voluptatibus officia quae nam, eius, labore doloremque cupiditate explicabo earum totam magni illo quia! Possimus ab facilis fugit earum, nemo provident quasi cum tempora sit quaerat. Laboriosam velit excepturi corporis eveniet veritatis nostrum dolor id nihil sit beatae quo perspiciatis est vitae quasi quod eaque laborum, officia suscipit porro? Dicta, pariatur vel expedita beatae nihil, accusantium voluptatum et impedit dolores quibusdam eos similique maiores aperiam ad, repellendus minima dolore aspernatur culpa odio quos corporis. Est dolor deserunt provident soluta a!</p>
+
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus fuga animi, minus consequuntur dolorem accusantium placeat possimus sapiente sequi voluptatibus officia quae nam, eius, labore doloremque cupiditate explicabo earum totam magni illo quia! Possimus ab facilis fugit earum, nemo provident quasi cum tempora sit quaerat. Laboriosam velit excepturi corporis eveniet veritatis nostrum dolor id nihil sit beatae quo perspiciatis est vitae quasi quod eaque laborum, officia suscipit porro? Dicta, pariatur vel expedita beatae nihil, accusantium voluptatum et impedit dolores quibusdam eos similique maiores aperiam ad, repellendus minima dolore aspernatur culpa odio quos corporis. Est dolor deserunt provident soluta a!</p>
+        </div>
+
+        <script>
+             let navbare1 = document.querySelector(".navbar");
+             let bottomcone1 = document.querySelector(".bottom-con"); 
+
+             window.addEventListener("scroll",()=> {
+                 if(window.scrollY > 360){
+                    navbare1.classList.add("active")
+                 }
+                 else{
+                    navbare1.classList.remove("active");
+                 }
+             });
+        
+        </script>
+    </body>
+</html>

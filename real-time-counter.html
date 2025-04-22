@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>REal-Time Charater Counter</title>
+<style>
+    body{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        font-family: cursive;
+    }
+    .container{
+        background-color: pink;
+        width: 400px;
+        padding: 20px;
+        margin: 5px;
+        border-radius: 10px;
+        border: double 8px lightcoral;
+        box-shadow: 0 4px 8px pink;
+    }
+    .text{
+        resize: none;
+        width: 100%;
+        height: 100px;
+        font-size: 18px;
+        font-family: sans-serif;
+        padding: 10px;
+        box-sizing: border-box;
+        border: solid 2px grey;
+    }
+    .counter{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5px;
+    }
+    .counter p{
+        font-size: 18px;
+        color: purple;
+    }
+    .total{
+        color: steelblue;
+    }
+    .remaining{
+        color: steelblue;
+    }
+</style>
+
+</head>
+
+<body>
+<div class="container">
+    <h2>Real-Time Charater Counter</h2>
+    <textarea class="text" id="text" 
+    placeholder="Please write your text here....." maxlength="100"></textarea>
+<div class="counter">
+    <p>Total charater:
+        <span class="total" id="total"></span>
+    </p>
+    <p>Remaining:
+        <span class="remaining" id="remaining"></span>
+    </p>   
+</div>
+</div>
+
+<script>
+    let text1 = document.getElementById("text");
+    let counter = document.getElementById("total");
+    let remaining = document.getElementById("remaining");
+
+    text1.addEventListener("keyup",() => {
+        updateCounter()
+    });
+
+    updateCounter()
+
+    function updateCounter(){
+        counter.innerText = text1.value.length;
+        remaining.innerText = text1.getAttribute("maxLength") - text1.value.length;  
+    };
+</script>
+</body>
+
+</html>

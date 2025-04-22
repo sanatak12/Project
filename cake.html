@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dream Cakes</title>
+
+        <style>
+            body{
+                font-family: arial;
+                margin: 0;
+            }
+            .navbar ul{
+                display: flex;
+                justify-content: space-between;
+                background-color: purple;
+                align-items: center;
+                text-align: center;
+                font-size: small;
+                margin: 0%;
+                color: white;
+                height: 40px;
+                list-style-type: none;
+            }
+            .main img{
+                width: 200px;
+            }
+            .main{
+                width: 125px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-left: 30px;
+            }
+            .main1{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 30px;
+                color: purple;
+            }
+            .main p{
+                font-size: small;
+            }
+            .header{
+                background-color: #feebf2;
+            }
+
+            .all-bloks img{
+                width: 100%;
+            }
+            .all-bloks{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background-color: #feebf2;
+            }
+            .cakes{
+                border: 2px purple double;
+                flex-basis: 19%;
+                max-width: 250px;
+                padding: 10px;
+                margin-bottom: 10px;
+                margin-left: 3px;
+                margin-right: 3px;
+                background-color: white;
+            }
+            .name{
+                color: purple;
+            }
+            @media only screen and (min-width:850px){
+                body{
+                    background-color: #feebf2;
+                }
+                .all-bloks{
+                    display: flex;
+                    justify-content: space-around;
+                }
+                .cakes{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    border: 4px purple  double;
+                }
+                .all-bloks img{
+                    width: 60%;
+                }
+              .header{
+                display: flex;
+                justify-content: center;
+              }
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <div class="navbar">
+            <ul>
+                <li>About</li>
+                <li>Cakes</li>
+                <li>Order-online</li>
+                <li>Customer-Review</li>
+            </ul>
+        </div>
+        <div class="header">
+    <div class="main">
+        <img src="/img/Dream Cakes.png">
+           <div class="main1"> <h1>Welcome   <h3>to dream cakes</h3>
+            <h1>
+          <p>Made by Shahin Tak</p></div>
+    </div>    
+    </div>
+        <div class="all-bloks">
+            <div class="cakes">
+                <img src="/img/rose.jpg">
+                <p class="name">Rasmalai cake</p>
+            </div>
+            <div class="cakes">
+                <img src="/img/mango.jpg">
+                <p class="name">Mango chocolate cake</p>
+            </div>
+            <div class="cakes">
+                <img src="/img/blueberry.jpg">
+                <p class="name">Blueberry cake</p>
+            </div>
+           
+            <div class="cakes">
+                <img src="/img/strawbeery.jpg">
+                <p class="name">Strawberry cake</p>
+            </div>
+            <div class="cakes">
+                <img src="/img/chocolate.jpg">
+                <p class="name">Chocolate cake</p>
+            </div>
+            <div class="cakes">
+                <img src="/img/costmize.jpg">
+                <p class="name">Customize cake on occasions</p>
+            </div>
+            <div class="cakes">
+                <img src="/img/rasmalai.jpg">
+                <p class="name">Kajukatli cake</p>
+            </div>
+            <div class="cakes">
+                <img src="/img/blue.jpg">
+                <p class="name">Customize Cakes in Different colors</p>
+            </div>
+        </div>
+
+
+    </body>
+</html>
