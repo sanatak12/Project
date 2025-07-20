@@ -15,7 +15,7 @@
                 align-items: center;
                 text-align: center;
                 font-size: small;
-                margin: 0%;
+                margin: 0;
                 color: white;
                 height: 40px;
                 list-style-type: none;
@@ -54,7 +54,7 @@
                 background-color: #feebf2;
             }
             .cakes{
-                border: 2px purple double;
+                border: 2px double purple;
                 flex-basis: 19%;
                 max-width: 250px;
                 padding: 10px;
@@ -63,6 +63,7 @@
                 margin-right: 3px;
                 background-color: white;
             }
+
             .name{
                 color: purple;
             }
@@ -79,7 +80,7 @@
                     align-items: center;
                     flex-direction: column;
                     flex-wrap: wrap;
-                    border: 4px purple  double;
+                    border: 4px double purple;
                 }
                 .all-bloks img{
                     width: 60%;
@@ -88,6 +89,24 @@
                 display: flex;
                 justify-content: center;
               }
+            }
+            @media screen and (max-width: 500px) {
+                .navbar ul li{
+                    margin-left: 0;
+                    margin-right: 10px;
+                }
+               .cakes{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                flex-basis: 10%;
+               }
+               .main img{
+                width: 120px;
+               }
+               .main h1{
+                font-size: 30px;
+               }
             }
         </style>
         
@@ -105,8 +124,8 @@
         <div class="header">
     <div class="main">
         <img src="/img/Dream Cakes.png">
-           <div class="main1"> <h1>Welcome   <h3>to dream cakes</h3>
-            <h1>
+           <div class="main1"> <h1>Welcome </h1>
+            <h4>To Dream Cakes</h4>
           <p>Made by Shahin Tak</p></div>
     </div>    
     </div>
